@@ -1,29 +1,26 @@
 
 
 <!DOCTYPE html>
-<html lang=en>
-    <head>
-        <title>candy land</title>
-        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-    </head>
-    <body>
-        <a-scene>
+<html lang="en">
+  <head>
+    <title>Candy Land</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Sky -->
+      <a-sky color="lightblue"></a-sky>
 
-
-    <a sky
-        color="lightblue"
-    ></a sky>
-
-
-    <a-plane
+      <!-- Ground -->
+      <a-plane
         scale="50 50"
         color="lightpink"
-        rotation="90 0 0"
-    ></a-plane> 
-    
-    
+        rotation="-90 0 0"
+        position="0 0 0"
+      ></a-plane>
 
     
-        </a-scene>
-    </body>
+      <a-entity camera look-controls wasd-controls position="0 1.6 5"></a-entity>
+    </a-scene>
+  </body>
 </html>
